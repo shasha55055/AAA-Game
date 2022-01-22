@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "instructions.css">
+</head>
+
+
+
+<body>
+    <script src="./script.js"></script>
+    <header>
+        <h1 id = instructions>Instructions</h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    </header>
+
+      
+    
+    <div class = instructions_container id = container>
+        <div class = thinginbox id = line1 >
+            AAA is a fun game to play when you and your friends are bored and want to feel something...mostly pain:/
+            <img src="./with_friends.PNG" height = 70% width = 80% alt = "">
+        </div>
+        <button class = slide_button onmouseover="slap_sound()" onclick="show('line2')">Next</button>    
+    </div>
+       
+        <div id = line2 style = "display:none"> 
+            <div class = thinginbox>
+                Sometimes your friends aren’t there :(<br><br><br>
+            <img src="./with_self.PNG" height = 60% width = 50% alt = "">
+            </div>
+            <button class = slide_button onmouseover="slap_sound()" onclick="show('line3')">Next</button>
+        </div>
+        
+        
+        <div id = line3 style = "display:none"> 
+            <div class = thinginbox >
+                But, Tobor is always here. Tobor loves to play :) <br>  
+            <img id = line3 src="./with_tobor_face.PNG" height = 78% width = 50% alt = "">
+            </div>
+            <button class = slide_button onmouseover="slap_sound()" onclick="show('line4')">Next</button>
+        </div>
+        
+
+        <div  id = line4 style = "display:none">
+            <div class = thinginbox>
+                Tobor is polite so you can go first :) <br><br><br>
+            <img src="./with_tobor.PNG" height = 65% width = 60% alt = "">
+            </div>
+            <button class = slide_button onmouseover="slap_sound()" onclick="show('line5')">Next</button>
+        </div>
+       
+
+        <div id = line5 style = "display:none">
+            <div class = thinginbox >
+                Select an option <br> <br><br><br><pre>A       B       C      D</pre>
+            <div class = "humanHands">
+                <img src="./A_hand.PNG" height = 23% width = 23% alt = "">
+                <img src="./B_hand.PNG" height = 23% width = 23% alt="">
+                <img src="./C_hand.PNG" height = 23% width = 23% alt="">
+                <img src="./D_hand.PNG" height = 23% width = 23% alt="">
+            </div>
+            </div>
+            <button class = slide_button onmouseover="slap_sound()" onclick="show('line6')">Next</button>
+            
+        </div>
+
+
+        <div  id = line6 style = "display:none">
+            <div class = thinginbox>
+                If Tobor’s choice matches your’s, you get to slap Tobor’s robo hands! Dw Tobor can't feel pain. <br>
+            <img id = user_hand_instructions src="./A_hand.PNG" height = 38% width = 38% alt = "" style = "top:-43px"> 
+            <img id = tobor_hand_instructions src="./A_tobor.PNG" height = 70% width = 20% alt = "" data-rotate= 270 style="transform:rotate(270deg); left: 35px;">
+            </div>
+            <button class = slide_button onmouseover="slap_sound()" onclick="show('line7')">Next</button>
+            
+        </div>
+
+        <div id = line7 style = "display:none">
+            <div class = thinginbox ><br><br><br><br>
+                Then you get to go again.
+            </div>    
+            <button class = slide_button onmouseover="slap_sound()" onclick="show('line8')">Next</button>
+        </div>
+        <div  id = line8 style = "display:none">
+            <div class = thinginbox><br><br><br><br>
+                If Tobor’s choice doesn’t match with your’s than move on to the next turn.
+            </div>   
+            <button class = slide_button onmouseover="slap_sound()" onclick="show('line9')">Next</button> 
+        </div>
+
+        <div id = line9 style = "display:none">
+            <div class = thinginbox > <br><br><br><br>
+                Yeah, it’s one of those games that makes more sense when you just start playing. So have fun!
+            </div>   
+            <button class = slide_button onmouseover="slap_sound()" onclick="show('line10')">Next</button>
+        </div>
+        
+        <div id = line10 style = "display:none">
+            <div class = thinginbox ><br><br><br><br>
+                Disclaimer! Tobor’s metal hands are pretty tough, so watch your health and be careful!
+                
+            </div>
+            <a href="./index.html">
+                <button onmouseover="slap_sound()" class = slide_button>Done</button>
+            </a>
+               
+        </div>
+        <audio id = "slap_sound" src = "slap.mp3"></audio>  
+   
+        <embed src = "back_music.mp3" loop = "true" autostart = "true" width = "2" height = "0">
+    
+</body>
+
+</html>

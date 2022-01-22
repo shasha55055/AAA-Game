@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #351886;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.text_display{
+    background: black;
+    border: 5px solid white;
+    height: 100px;
+    width: 95%;
+    color: white;
+    padding: 5px;
+    margin: auto;
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 50px;
+    
+}
+
+#turn{
+    text-align:center;
+    animation: expand .5s linear 1;
+}
+
+
+
+
+
+.health_container{
+    color: white;
+    width: 90%;
+    height: 10%;
+    position:absolute;
+    top: 20%;
+    left: 5%;
+    border: 5px solid white;
+}
+
+#my_health{
+    position: absolute;
+    top: 25%;
+    left:2%;
+    border: 5px solid white;
+    height: 50%;
+    width: 40%;
+
+}
+
+#robot_health{
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    border: 5px solid white;
+    height: 50%;
+    width: 40%;
+}
+
+#my_bar{
+    background: red;
+    height: 100%;
+    width: 100%;  
+}
+
+#robot_bar{
+    background: red;
+    height: 100%;
+    width: 100%;  
+}
+
+.game_space{
+    border: 5px solid white;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 35%;
+}
+
+.new_box{
+    border: 5px solid white;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 35%;
+}
+
+#user_default {
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 19%;
+    left: 0%;
+    display: block;
+}
+
+#display_A {
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 19%;
+    left: 0%;
+    display: none;
+}
+#display_B{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 19%;
+    left:0%;
+    display: none;
+}
+#display_C{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 19%;
+    left:0%;
+    display: none;
+}
+#display_D{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 19%;
+    left:0%;
+    display: none;
+}
+
+#robo_default {
+    height: 400px;
+    width: 200px;
+    transform:rotate(270deg);
+    position: absolute;
+    top: -5%;
+    right: 6%;
+    overflow:hidden;
+    display:block;
+
+}
+
+#display_rA {
+    height: 400px;
+    width: 200px;
+    transform:rotate(270deg);
+    position: absolute;
+    top: -5%;
+    right: 6%;
+    overflow:hidden;
+    display:none;
+}
+
+#display_rB{
+    height: 420px;
+    width: 300px;
+    transform:rotate(270deg);
+    position: absolute;
+    top: -10%;
+    right: 0%;
+    overflow:hidden;
+    display: none;
+}
+#display_rC{
+    height: 250px;
+    width: 400px;
+    transform:rotate(180deg);
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    overflow:hidden;
+    display: none;
+}
+#display_rD{
+    height: 300px;
+    width: 400px;
+    transform:rotate(180deg);
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    overflow:hidden;
+    display: none;
+}
+
+.button_container {
+    margin: 0 auto;
+   
+    width: 340px;  
+}
+
+.inner{
+    position: absolute;
+    top: 86%;
+}
+.buttons{
+    font-size: 40px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    font-family: 'Saira Stencil One', cursive;
+}
+
+#return{
+    background-color: black;
+    color: white;
+    border: 4px solid white;
+    border-radius: 20%;
+    padding: 10px;
+    position: absolute;
+    top: 89%;
+    left: 10%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#ouch_1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top:60%;
+    right:50%;
+    display: none;
+}
+#ouch_2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top:60%;
+    right:50%;
+    display: none;
+}
+#ouch_3 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top:60%;
+    right:50%;
+    display: none;
+}
+#ouch_4 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top:60%;
+    right:50%;
+    display: none;
+}
+
+.buttons:hover {
+    background: white;
+    border: 5px solid black;
+    color: black;
+}

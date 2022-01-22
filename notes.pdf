@@ -1,0 +1,56 @@
+Make the AAA game
+
+begining screen
+- "welcome to the game...."
+- "instructions page"
+- add button that says begin and brings to play screen
+
+
+play screen
+- add options A B C and D
+- if its user turn (default)
+        - select ABCD
+        - run an animation where the hands go up and down
+        - play sound that goes "A...A...."user choice""
+             - if user wins (user choice = compchoice)
+                - user hands slap comp hands [number of times]
+                - computer health bar decreases
+                - user goes again/ run if its your turn again
+            - if user does not win (user choice is not compchoice)
+                -computers turn
+            user win = counter == 1
+            user lose = counter ==2
+            robot win = counter ==2
+            robot lose = counter == 2
+            if counter ==2
+                computer turn
+            if ocunter == 1
+                user turn
+
+
+- if computer turn
+    - selecrt ABCD
+    -run animation where hands go up and down
+    -play sound that goes "A...A....""computer choice"
+        -if comp wins (com choice = user choice)
+            - comp hand slaps user hands [number of times]
+            - user health bar decreases
+            - computer goes again
+        - if comp doesn't win (comp choice is not user choice)
+            -users turn
+
+
+- if computer health bar = 0
+    - display you win
+    - play again? yes or no
+        - if yes, then return to play screen
+
+- if user health bar = 0
+    - display you lost
+    - play again? yes or no
+        -if yes, then return to play screen
+
+end screen
+
+
+problems:

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    padding: 5px;
+    margin: 10px;
+    border: 5px solid white;
+}
+
+#heading{
+    color: white;
+    text-align: center;
+    font-family: 'Saira Stencil One', cursive; 
+    font-size: 50px;
+}
+
+body{
+    background-color: rgba(51,25,132,255);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+#instructions{
+    background-color: black;
+    color: white;
+    border: 4px solid white;
+    border-radius: 20%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 4;
+
+}
+
+#start_game{
+    background-color: black;
+    color: white;
+    border: 4px solid white;
+    border-radius: 20%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index:5;
+}
+
+.hand_animation{
+    height: 100%;
+    width: 100%;
+}
+
+#opening_hand{
+    z-index: 2;
+    height:90%;
+    width: 70%;
+    transform: scaleX(-1);
+    position: absolute;
+    top: 40%;
+    overflow: hidden;
+    animation: animate_1 .5s linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate_1 {
+    from{
+        left: -80%;
+    }
+    to{
+       left: -20%; 
+    }
+}
+
+#opening_tobor{
+    transform: scaleX(-1);
+    z-index: 1;
+    height:90%;
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    overflow: hidden;
+    animation: animate_2 .5s linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate_2 {
+    from{
+        right: -100%;
+    }
+    to{
+       right: -20%; 
+    }
+}
+

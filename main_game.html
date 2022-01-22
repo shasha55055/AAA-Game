@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "main_style.css">
+    <script src = "./script.js"></script>
+</head>
+
+
+<body>
+    <br>
+    <div id = turn class = text_display>
+        Start Match(It's Your Turn )
+    </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+
+    <div class = health_container>
+        <div id = my_health> 
+            <div id = my_bar></div>
+        </div>
+        <div id = robot_health>
+            <div id = robot_bar> </div>
+        </div>
+    </div>
+
+    <div class = game_space> 
+        
+        <img id = robo_default src = "A_tobor.PNG">
+        <img id = display_rA src = "A_tobor.PNG">
+        <img id = display_rB src = "B_tobor.PNG">
+        <img id = display_rC src = "C_tobor.PNG">
+        <img id = display_rD src = "D_tobor.PNG">
+
+        <img id = user_default src = "A_hand.PNG">
+        <img id = display_A src = "A_hand.PNG">
+        <img id = display_B src = "B_hand.PNG">
+        <img id = display_C src = "C_hand.PNG">
+        <img id = display_D src = "D_hand.PNG">
+        <img id = "ouch_1" src = "./ouch.png" >
+        <img id = "ouch_2" src = "./ouch.png" >
+        <img id = "ouch_3" src = "./ouch.png" >
+        <img id = "ouch_4" src = "./ouch.png" >
+    </div>
+    
+    
+        <div class = button_container>
+            <div class = inner>
+                <button  class = buttons id = A>A</button>
+                <button  class = buttons id = B>B</button>
+                <button  class = buttons id = C>C</button>
+                <button  class = buttons id = D>D</button>
+
+            </div>
+           
+        </div>
+
+    
+    
+    <button onmouseover="slap_sound()" onclick = "home_redirect()" id = return> Return </button>
+    <div class = new_box></div>
+    <audio id = "slap_sound" src = "slap.mp3"></audio>  
+    <audio id = "buzz_sound" src = "buzzy.mp3"></audio>  
+    <audio id = "A_sound" src = "AAA.mp3"></audio>
+    <audio id = "B_sound" src = "AAB.mp3"></audio>  
+    <audio id = "C_sound" src = "AAC.mp3"></audio>  
+    <audio id = "D_sound" src = "AAD.mp3"></audio> 
+    <audio id = "RA_sound" src = "RAAA.mp3"></audio>
+    <audio id = "RB_sound" src = "RAAB.mp3"></audio>  
+    <audio id = "RC_sound" src = "RAAC.mp3"></audio>  
+    <audio id = "RD_sound" src = "RAAD.mp3"></audio> 
+
+    <audio id = "slap_A" src = "Slap_A.mp3"></audio> 
+    <audio id = "slap_B" src = "Slap_B.mp3"></audio> 
+    <audio id = "slap_C" src = "Slap_C.mp3"></audio> 
+    <audio id = "slap_D" src = "Slap_D.mp3"></audio> 
+
+<embed src = "back_music.mp3" loop = "true" autostart = "true" width = "2" height = "0">
+
+
+
+</body>
+
+
+</html>
